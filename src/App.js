@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {BrowserRouter as Router, Switch} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import './assets/scss/styles.scss'
 
@@ -11,17 +11,15 @@ import Routes from './routes'
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Fragment>
-          <Navbar/>
-          <div className="container">
-            <Routes/>
-            <Footer/>
-          </div>
-        </Fragment>
-      </Router>
+      <Fragment>
+        <Navbar/>
+        <div className="container">
+          <Routes/>
+          <Footer/>
+        </div>
+      </Fragment>
     );
   }
 }
 
-export default App
+export default withRouter(App)
