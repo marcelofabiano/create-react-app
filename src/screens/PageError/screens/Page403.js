@@ -1,5 +1,7 @@
 import React from 'react'
 
 export default props => (
-  <h1>Error 403</h1>
+  <div className="page">
+    <h1>Erro 403</h1>
+  </div>
 )

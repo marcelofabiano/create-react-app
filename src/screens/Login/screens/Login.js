@@ -1,5 +1,7 @@
 import React from 'react'
 
 export default props => (
-  <p>{props.children}</p>
+  <div className="page">
+    <h1>Login</h1>
+  </div>
 )

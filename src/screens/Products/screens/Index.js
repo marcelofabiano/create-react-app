@@ -2,6 +2,6 @@ import React from 'react'
 
 export default props => (
   <div className="page">
-    <h1>Dashboard</h1>
+    <h1>Produtos</h1>
   </div>
 )

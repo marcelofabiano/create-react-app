@@ -21,7 +21,10 @@ export default props => (
             <Link className='nav-link' to='/'>Dashboard</Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='/accounts'>Contas</Link>
+            <Link className='nav-link' to='/products'>Produtos</Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/categories'>Categorias</Link>
           </li>
         </ul>
       </div>

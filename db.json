@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "description": "Escritório"
+    },
+    {
+      "id": 2,
+      "description": "Cozinha"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Caderno Tilibra",
+      "description": "1) Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.",
+      "price": 20.23,
+      "category": 1
+    },
+    {
+      "id": 2,
+      "name": "Caneta Multicor",
+      "description": "2) Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.",
+      "price": 7.34,
+      "category": 1
+    },
+    {
+      "id": 3,
+      "name": "Conjunto de Panelas",
+      "description": "3) Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.",
+      "price": 87.49,
+      "category": 2
+    },
+    {
+      "id": 4,
+      "name": "Jogo de copos",
+      "description": "4) Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.",
+      "price": 35.99,
+      "category": 2
+    }
+  ]
+}
