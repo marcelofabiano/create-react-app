@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 // Products
 import ProductsIndex from './screens/Products/screens/Index'
@@ -19,7 +19,9 @@ export default props => (
     <Route exact path='/categories' component={CategoriesIndex} />
     <Route exact path='/403' component={Page403} />
     <Route exact path='/404' component={Page404} />
-    <Route exact path='*' component={Page404} />
+    <Route exact path='*' render={() => (
+      <Redirect to='/404'/>
+    )} />
   </Switch>
 )
 
