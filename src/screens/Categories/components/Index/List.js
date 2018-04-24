@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import api from '../../../../api'
+import Category from '../../resources'
 
 class List extends Component {
 
@@ -13,7 +13,7 @@ class List extends Component {
   }
 
   loadData() {
-    api.get('/categories').then((res) => (
+    Category.list().then((res) => (
       this.setState({
         categories: res.data
       })

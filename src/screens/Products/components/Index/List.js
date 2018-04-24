@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 
-import api from '../../../../api'
+import Product from '../../resources'
 
 class List extends Component {
 
@@ -13,7 +13,7 @@ class List extends Component {
   }
 
   loadData() {
-    api.get('/products').then((res) => (
+    Product.list().then(res => (
       this.setState({
         products: res.data
       })
@@ -30,17 +30,14 @@ class List extends Component {
     return (
       <div>
         { this.state.products.map(product => (
-          <Fragment>
-            <div className='card' key={ product.id }>
-              <div className='card-body'>
-                Nome: { product.name } <br/>
-                Descrição: { product.description } <br/>
-                price: { product.price } <br/>
-                category: { product.category } <br/>
-              </div>
+          <div className='card' key={ product.id }>
+            <div className='card-body'>
+              Nome: { product.name } <br/>
+              Descrição: { product.description } <br/>
+              valor: { product.price } <br/>
+              categoria: { product.category } <br/>
             </div>
-            <br/>
-          </Fragment>
+          </div>
         ))}
       </div>
     )
