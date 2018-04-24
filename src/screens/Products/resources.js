@@ -1,9 +1,9 @@
 import api from '../../api'
 
-export const Produtct = {
+export const Product = {
   list: () => (
     api.get('/products')
   )
 }
 
-export default Produtct
+export default Product
